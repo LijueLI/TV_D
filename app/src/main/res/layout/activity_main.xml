@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000000"
     tools:context=".MainActivity">
 
 
@@ -22,205 +23,219 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
-            android:id="@+id/IIIstStation"
+        <TextView
+            android:id="@+id/Station3"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="4"
-            android:orientation="vertical">
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="觀測站  1 (出火橋上游)"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/Station3"
-                android:layout_width="match_parent"
+                android:id="@+id/Dept2"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#BF360C"
-                android:text="觀測站  1 (東門溪上游)"
-                android:textAlignment="center"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="河川水位"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="36sp" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/Dept2_d"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="60sp" />
+
+            <TextView
+                android:id="@+id/unit_wd"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#FBE9E7 "
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/Dept2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="河川水位"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="24sp" />
-
-                <TextView
-                    android:id="@+id/Dept2_d"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="36sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#FFAB91"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/hourrain"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="1小時雨量"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="24sp" />
-
-                <TextView
-                    android:id="@+id/hourrain_d"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="36sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#FBE9E7 "
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/dayrain"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="24小時雨量"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="24sp" />
-
-                <TextView
-                    android:id="@+id/dayrain_d"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="36sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#FFAB91"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/IIIrdUpdatetime"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="資料更新時間"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:id="@+id/IIIrdUpdatetime_d"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="18sp" />
-            </LinearLayout>
+                android:gravity="center"
+                android:text="cm"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/IIstStation"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="6"
-            android:orientation="vertical">
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/Station2"
-                android:layout_width="match_parent"
+                android:id="@+id/hourrain"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#BF360C"
-                android:text="觀測站  2(東門溪下游)"
-                android:textAlignment="center"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="時雨量"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="36sp" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/hourrain_d"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="60sp" />
+
+            <TextView
+                android:id="@+id/unit_hr"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#FBE9E7 "
-                android:orientation="horizontal">
+                android:gravity="center"
+                android:text="mm"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
+        </LinearLayout>
 
-                <TextView
-                    android:id="@+id/Dept"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="河川水位"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="24sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/Dept_d"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="36sp" />
-            </LinearLayout>
+            <TextView
+                android:id="@+id/dayrain"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="日雨量"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/dayrain_d"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="60sp" />
+            <TextView
+                android:id="@+id/unit_dr"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#FFAB91"
-                android:orientation="horizontal">
+                android:gravity="center"
+                android:text="mm"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
+        </LinearLayout>
 
-                <TextView
-                    android:id="@+id/IIndUpdatetime"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="資料更新時間"
-                    android:textColor="#000000"
-                    android:textAlignment="center"
-                    android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/IIndUpdatetime_d"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:textColor="#000000"
-                    android:textAlignment="center"
-                    android:textSize="18sp" />
-            </LinearLayout>
+            <TextView
+                android:id="@+id/IIIrdUpdatetime"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="資料更新時間"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
 
+            <TextView
+                android:id="@+id/IIIrdUpdatetime_d"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Station2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="觀測站  4(東門溪上游)"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Dept"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="河川水位"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/Dept_d"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="60sp" />
+
+            <TextView
+                android:id="@+id/unit_wd2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="cm"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/IIndUpdatetime"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="資料更新時間"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/IIndUpdatetime_d"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
         </LinearLayout>
 
     </LinearLayout>
@@ -241,216 +256,176 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            android:id="@+id/Time_Dis"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="6"
-            android:orientation="vertical">
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/Time_title"
-                android:layout_width="match_parent"
+                android:id="@+id/VminMaxwind"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#1976D2"
-                android:text="現在時間"
-                android:textAlignment="center"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="5分鐘\n最大風速"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
-
-            <TextClock
-                android:id="@+id/Date"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#90CAF9"
-                android:format12Hour="yyyy/MM/dd"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="24sp" />
-
-            <TextClock
-                android:id="@+id/Time"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#E3F2FD "
-                android:format12Hour="aa hh:mm:ss"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="24sp" />
+                android:textSize="36sp" />
 
             <TextView
-                android:id="@+id/Status"
-                android:layout_width="match_parent"
+                android:id="@+id/VminMaxwind_d"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="60sp" />
+
+            <TextView
+                android:id="@+id/unit_w1"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
                 android:layout_weight="1"
-                android:background="#90CAF9"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="24sp" />
+                android:gravity="center"
+                android:text="m/s"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
+
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/IstStation"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="4"
-            android:orientation="vertical">
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/XminAVGwind"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="10分鐘\n平均風速"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/XminAVGwind_d"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="60sp" />
+
+            <TextView
+                android:id="@+id/unit_w2"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#1976D2"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/Location1_d"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="24sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#90CAF9"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/VminMaxwind"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="五分鐘最大風速"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="24sp" />
-
-                <TextView
-                    android:id="@+id/VminMaxwind_d"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="24sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#E3F2FD "
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/XminAVGwind"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="十分鐘平均風速"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="24sp" />
-
-                <TextView
-                    android:id="@+id/XminAVGwind_d"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="24sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#90CAF9"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/Temp"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="溫度"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="24sp" />
-
-                <TextView
-                    android:id="@+id/Temp_d"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="24sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#E3F2FD "
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/Humi"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="濕度"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="24sp" />
-
-                <TextView
-                    android:id="@+id/Humi_d"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="24sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#90CAF9"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/IstUpdatetime"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="資料更新時間"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:id="@+id/IstUpdatetime_d"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="18sp" />
-            </LinearLayout>
-
+                android:gravity="center"
+                android:text="m/s"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Temp"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="溫度"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/Temp_d"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="60sp" />
+
+            <TextView
+                android:id="@+id/unit_T"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="°C"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Humi"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="濕度"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/Humi_d"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="60sp" />
+
+            <TextView
+                android:id="@+id/unit_H"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="%"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/IstUpdatetime"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="資料更新時間"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/IstUpdatetime_d"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+
     </LinearLayout>
 
     <ImageView
@@ -470,5 +445,23 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.508"
         app:srcCompat="@drawable/iconfinder_101_warning_183416" />
+
+    <ImageView
+        android:id="@+id/warning_img"
+        android:layout_width="856dp"
+        android:layout_height="466dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.508"
+        app:srcCompat="@drawable/warning_y" />
 
 </android.support.constraint.ConstraintLayout>

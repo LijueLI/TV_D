@@ -10,12 +10,12 @@ public class Station2Json {
     private String entry_id;
 
     @SerializedName("field1")
-    private String WaterLevel;
+    private double WaterLevel;
 
     @SerializedName("field4")
     private String Warning;
 
-    public Station2Json(String created_at, String entry_id, String waterLevel, String warning) {
+    public Station2Json(String created_at, String entry_id, double waterLevel, String warning) {
         this.created_at = created_at;
         this.entry_id = entry_id;
         WaterLevel = waterLevel;
@@ -38,11 +38,11 @@ public class Station2Json {
         this.entry_id = entry_id;
     }
 
-    public String getWaterLevel() {
+    public double getWaterLevel() {
         return WaterLevel;
     }
 
-    public void setWaterLevel(String waterLevel) {
+    public void setWaterLevel(double waterLevel) {
         WaterLevel = waterLevel;
     }
 
